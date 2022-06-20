@@ -5,24 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Захар Куликалов - Биография</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img src="Собств Фото.jpg" width="300" alt="Моё фото">
+    <div class="container">
+    <div class="text">
+    <img src="Собств Фото.jpg" width="300" alt="Моё фото" class="avatar">
+    </div>
+    <div class="info-text">
     <h1>Куликалов Захар</h1>
     <p>Я <strong>Куликалов Захар</strong> - окончил средне-образовательную школу с <em>крсаным аттестатом.</em> Далее буду учиться на <strong><em>Frontend</em></strong> разработчика.</p>
     <p>Я люблю заниматься спортом. Живу в селе. Вскоре переезжаю в город. Надеюсь там у меня всё получится. <em>Моя мечта путешествовать по миру и радоваться жизни.</em></p>
     <h2>Список социальных сетей:</h2>
     <a href="https://vk.com/id408769576" target="_blank">Вконтакте</a> |
     <a href="https://www.youtube.com/" target="_blank">Ютуб</a> |
+    </div>
+    
+    
+
+    <div class="card bg-green">
     <h2>Мои хобби</h2>
-    <ol>
+    <ol class="list">
         <li>Рыбалка</li>
         <li>Спорт</li>
         <li>Плавание</li>
         <li>Программирование</li>
     </ol>
+    </div>
+    <div class="card bg-darkred">
     <h2>Опыт работы</h2>
-    <table>
+    <table class="table">
         <thead>
         <tr>
             <th>Название</th>
@@ -43,30 +55,36 @@
         </tr>
         </tbody>
     </table>
-    <h2>Связаться со мной</h2>
-    <form> 
+    </div>
+    <div class="card bg-yellow">
+    
+    <form class="form"> 
+        <h2>Связаться со мной</h2>
 
-     <div>
+     <div class="form-row">
+
+     <div class="form-group">
         <label for="text1">Ваше имя:</label>
         <input type="text" id="text1" placeholder="Введите имя">
      </div>
+    </div>
 
-     <div>
+     <div class="form-group">
         <label for="text2">Ваш email:</label>
         <input type="text" id="text2" placeholder="Введите email">
      </div>
 
-     <div> 
+     <div class="form-group"> 
         <label for="message">Ваше сообщение:</label>
-        <br>
         <textarea id="message" cols="25" rows="7" placeholder="Введите сообщение..."></textarea>
      </div>
 
      <div>
-        <button type="submit">Отправить!</button>
+        <button type="submit" class="btn">Отправить!</button>
      </div>
-     
     </form>
+    </div>
+    </div>
 
 
 </body>
